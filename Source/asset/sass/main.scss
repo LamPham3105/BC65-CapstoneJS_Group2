@@ -1,8 +1,16 @@
 // Thứ tự import
 // 1. Helpers
+@import "../sass/Helpers/variables";
+@import "../sass/Helpers/mixin";
+@import "../sass/Helpers/function";
 // 2. Vendors
 // 3. Base
+@import "../sass/Base/reset";
 // 4. Component
 // 5. Layout
+@import "../sass/Layout/cart";
+@import "../sass/Layout/header";
+@import "../sass/Layout/footer";
 // 6. Pages
+@import "../sass/Pages/home";
 // 7. Themes

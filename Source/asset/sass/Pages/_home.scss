@@ -1,0 +1,91 @@
+a {
+  text-decoration: none;
+  color: $primary;
+  transition: color 0.5s linear;
+
+  @include hover-active() {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+
+.products {
+  background: $color-linear-1;
+  padding: 100px 0;
+
+  &__title {
+    text-align: center;
+    @include styleText(2rem, bold, $white);
+    margin-bottom: 40px;
+  }
+
+  .drop-button {
+    width: 25%;
+    border-radius: 10px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    .card {
+      border: none;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 30px;
+
+      &-img-top {
+        box-shadow: 6px 6px 12px $white, -6px -6px 12px $white;
+        background-color: $white;
+        border-radius: 10px;
+      }
+
+      .button-buy {
+        background-color: $secondary;
+        color: $white;
+        padding: 10px 10px;
+        border-radius: 10px;
+      }
+
+      .icon-cart {
+        padding-right: 10px;
+      }
+
+      .text-truncate {
+        display: inline-block;
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 32px;
+    justify-content: center;
+
+    a {
+      color: $secondary;
+      padding: 8px 16px;
+      text-decoration: none;
+      border: 1px solid $secondary;
+      margin: 0 5px;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $secondary;
+        color: white;
+      }
+    }
+
+    .active {
+      background-color: $secondary;
+      color: white;
+    }
+
+    #page-numbers {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+}
