@@ -1,0 +1,60 @@
+.body-index {
+  background: $color-linear-1;
+
+  .col-6 {
+    a:hover .lineSpace::before {
+      width: 100%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+      color: $secondary;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+  }
+
+  .img-card {
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 20px auto;
+      width: 250px;
+      height: 250px;
+      background: $white;
+      border-radius: 75px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.25rem;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      transition: 1s box-shadow;
+    }
+
+    h1 {
+      color: $primary;
+    }
+
+    .lineSpace {
+      display: inline-block;
+      padding-bottom: 0.25rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: $primary;
+        transition: width 0.25s ease-out;
+      }
+    }
+  }
+}

@@ -521,4 +521,53 @@ a:active, a:hover {
 .products .pagination #page-numbers {
   margin-top: 20px;
   font-size: 16px;
+}
+
+.body-index {
+  background: linear-gradient(to left, #8942a8, #ba382f);
+}
+.body-index .col-6 a:hover .lineSpace::before {
+  width: 100%;
+}
+.body-index a {
+  text-decoration: none;
+}
+.body-index a:active, .body-index a:hover {
+  color: #4dc0e3;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.body-index .img-card img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  border-radius: 75px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+.body-index .img-card h1 {
+  color: #354165;
+}
+.body-index .img-card .lineSpace {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+.body-index .img-card .lineSpace::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #354165;
+  transition: width 0.25s ease-out;
 }/*# sourceMappingURL=main.css.map */
