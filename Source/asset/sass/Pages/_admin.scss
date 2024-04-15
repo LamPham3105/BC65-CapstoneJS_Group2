@@ -1,0 +1,47 @@
+.productAdmin {
+  margin-top: 140px;
+
+  & .nav-item a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  & .button-add {
+    cursor: pointer;
+    background-color: $secondary;
+    color: $white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 50%;
+
+    i {
+      padding-right: 10px;
+    }
+  }
+
+  .searchdiv {
+    margin-left: 35%;
+
+    & .drop-button {
+      padding-right: 10px;
+    }
+
+    #arrangeSP {
+      width: 211px;
+    }
+
+    & #txtSearch {
+      width: 250px;
+    }
+  }
+
+  .button-paginate {
+    text-align: center;
+  }
+
+  .sp-thongbao {
+    color: red;
+    margin-left: 2px;
+    display: none;
+  }
+}

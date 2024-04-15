@@ -435,12 +435,55 @@ header .cart-button:active .bag-label, header .cart-button:hover .bag-label {
   color: #fff;
 }
 
+.admin .input-group-append {
+  height: 38px;
+}
+.admin #navbar {
+  position: relative;
+  z-index: 100;
+}
+.admin #navbar .nav__link {
+  justify-content: center;
+  align-items: center;
+}
+.admin #navbar .nav__link li {
+  list-style: none;
+  padding: 20px 20px;
+}
+.admin #navbar .nav__link li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.admin #navbar .nav__link li i {
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+.admin #navbar .nav__link li:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+.admin #navbar .nav__link a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 footer {
   padding: 20px 0;
   background: linear-gradient(to left, #8942a8, #ba382f);
 }
 footer p {
   color: #fff;
+}
+
+.admin footer {
+  margin-top: 60px;
 }
 
 a {
@@ -570,4 +613,43 @@ a:active, a:hover {
   height: 3px;
   background-color: #354165;
   transition: width 0.25s ease-out;
+}
+
+.productAdmin {
+  margin-top: 140px;
+}
+.productAdmin .nav-item a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.productAdmin .button-add {
+  cursor: pointer;
+  background-color: #4dc0e3;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 50%;
+}
+.productAdmin .button-add i {
+  padding-right: 10px;
+}
+.productAdmin .searchdiv {
+  margin-left: 35%;
+}
+.productAdmin .searchdiv .drop-button {
+  padding-right: 10px;
+}
+.productAdmin .searchdiv #arrangeSP {
+  width: 211px;
+}
+.productAdmin .searchdiv #txtSearch {
+  width: 250px;
+}
+.productAdmin .button-paginate {
+  text-align: center;
+}
+.productAdmin .sp-thongbao {
+  color: red;
+  margin-left: 2px;
+  display: none;
 }/*# sourceMappingURL=main.css.map */

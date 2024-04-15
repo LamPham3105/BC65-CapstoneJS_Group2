@@ -79,3 +79,52 @@ header {
     }
   }
 }
+
+.admin {
+  .input-group-append {
+    height: 38px;
+  }
+
+  #navbar {
+    position: relative;
+    z-index: 100;
+
+    & .nav__link {
+      justify-content: center;
+      align-items: center;
+
+      & li {
+        list-style: none;
+        padding: 20px 20px;
+
+        & span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          color: $white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-decoration: none;
+        }
+
+        & i {
+          padding-top: 5px;
+          font-size: 1.5rem;
+        }
+
+        &:hover {
+          transform: scale(1.5);
+          transition: all 0.5s;
+        }
+      }
+
+      & a {
+        color: $white;
+        font-weight: 700;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+    }
+  }
+}

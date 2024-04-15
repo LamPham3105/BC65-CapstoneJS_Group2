@@ -156,10 +156,9 @@ var shopCarts = [];
 
 function getProductCartOnLocal() {
   var jsonData = JSON.parse(getLocalStorage());
-  if (jsonData === "") {
+  if (jsonData === null) {
     return;
   }
-  console.log("jsonData: ", jsonData);
 
   shopCarts = jsonData.map(function (item) {
     // item: phần tử của array trong các lần lặp
